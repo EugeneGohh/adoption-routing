@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
+import { useHistory } from 'react-router';
 
 // import useHistory here.
 
 const Search = () => {
+  const history = useHistory();
 
   // get the history object here
 
@@ -16,6 +18,7 @@ const Search = () => {
     }).toString();
 
     // imperatively redirect with history.push()
+    history.push('/search/?' + searchQuery)
   };
 
   return (

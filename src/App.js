@@ -13,6 +13,10 @@ function App() {
       </Route>
 
       <Switch>
+        <Route>
+          <SearchPage path="/search" />
+        </Route>
+
         <Route path="/:type?">
           <HomePage />
         </Route>
